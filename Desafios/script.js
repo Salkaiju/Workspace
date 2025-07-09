@@ -41,7 +41,7 @@ function desafios(){
         if (idade2 == "" && idade2 == ""){
             alert(mensagemDeErro);
         } else if (idade2 >= 18) {
-            alert("Idade maior que 18 anos");
+            alert("Idade igual ou maior que 18 anos");
         } else {
             alert("Vai tomar no cu, sua idade é menor de 18");
         }
