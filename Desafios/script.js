@@ -37,19 +37,13 @@ function desafios(){
 
     do{
         nome2 = prompt("Digite seu nome");
-        if (nome === ""){
-            alert(mensagemDeErro);
-        }
-        } while (nome === "");
-
-        do{
         idade2 = prompt("Digite sua idade");
-        if (idade2 == ""){
+        if (idade2 == "" && idade2 == ""){
             alert(mensagemDeErro);
-        } else if (idade2 >= 18){
+        } else if (idade2 >= 18) {
             alert("Idade maior que 18 anos");
         } else {
-            alert("Vai tomar no cu, sua idade é menor de 18")
+            alert("Vai tomar no cu, sua idade é menor de 18");
         }
-        } while (idade2 == "");
+        } while (nome2 == "" && idade2 == "");
 }
