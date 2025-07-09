@@ -67,4 +67,4 @@ function desafios() {
                     alert("Idade menor que 18.");
                 }
             
-        }
+        };
