@@ -43,7 +43,7 @@ function desafio3(){
         alert("Você pontoou 100!");
     }
     else if (n > 100){
-        alert("Você pontoou" + n + "! e É maior que 100!!! para bennss!!");
+        alert("Você pontoou" + n + "! É maior que 100!!! para bennss!!");
     } else if (n < 100){
         alert("Você pontoou " + n + ", Mas é menor que 100, logo, você perdeu seu perdedor.");
     }
