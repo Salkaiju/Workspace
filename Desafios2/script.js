@@ -1,17 +1,37 @@
 function desafio(){
     let dia;
+    let aux;
+    do{
+        aux = "Passe";
     dia = prompt("Digite o dia");
     switch(dia){
         case "Sábado":{
             alert("Bom fim de semana!");
         } break;
         case "Domingo":{
-            alert("Bom fim de semana!")
+            alert("Bom fim de semana!");
+        } break;
+        case "Segunda-Feira":{
+            alert("Boa Semana!");
+        } break;
+        case "Terça-Feira":{
+            alert("Boa Semana!");
+        } break;
+        case "Quarta-Feira":{
+            alert("Boa Semana!");
+        } break;
+        case "Quinta-Feira":{
+            alert("Boa Semana!");
+        } break;
+        case "Sexta-Feira":{
+            alert("Boa Semana!");
         } break;
         default:{
-            alert("Boa semana!");
+            alert("Digite um dia válido. EX: 'Segunda-Feira' ou 'Sábado'.");
+            aux = "Default";
         }
     }
+} while(aux === "Default");
 }
 
 function desafio2(){
@@ -58,7 +78,7 @@ function desafio4(){
 function desafio5(){
     let nome;
     nome = prompt("Digite o seu nome aiii");
-    alert("Belezinha, " + nome + ", se escreveu!!!");
+    alert("Belezinha, " + nome + ", Boas vindawdas");
 }
 
 
