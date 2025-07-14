@@ -1,4 +1,4 @@
-const getRandomInteger = (min, max) => {
+const funAle = (min, max) => {
     min = Math.ceil(min)
     max = Math.floor(max)
 
@@ -7,15 +7,25 @@ const getRandomInteger = (min, max) => {
 
 
 alert("Jogo do número secreto.");
-let n = prompt("Digite o mínimo");
-let s = prompt("Digite o máximo");
+let n;
+let s;
 
-const ns = getRandomInteger(n, s);
+n = prompt("Digite o mínimo");
+s = prompt("Digite o máximo");
+
+
+let ns = funAle(n, s);
+let chute;
 console.log(ns);
-    let chute = prompt("Escolha o número secreto dentre " + n + " até " + s);
+    do{
+    chute = prompt("Escolha um número dentre " + n + " até " + s);
     if (chute == ns) {
         alert("Acertou!");
-    } 
-
+         } else if(chute > ns){
+            alert("Número maior que o secreto.");
+        } else if(chute < ns){
+            alert("Número menor que o secreto.");
+        }
+    } while(chute != ns);
 
 
