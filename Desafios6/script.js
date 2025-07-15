@@ -87,6 +87,11 @@ function maior(numero1, numero2, numero3){
     console.log("\n O maior número digitado foi: " + numeroMaior + "\n");
 }
 
+function multiPorSi(numero){
+    let numeroMulti = numero * numero;
+    console.log("\n Resultado do número multiplicado por si: " + numeroMulti);
+}
+
 
 
 
