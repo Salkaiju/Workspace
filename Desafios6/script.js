@@ -1,0 +1,90 @@
+import readlineSync from 'readline-sync';
+
+
+
+let select;
+let nome;
+let numero;
+let numero1;
+let numero2;
+let numero3;
+
+do{
+select = readlineSync.question(
+    'Digite qual desafio fazer: \n' +
+    '0: Finalizar. \n' +
+    '1: Criar uma função que exibe "Olá, mundo!" no console.\n' +
+    '2: Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.\n' +
+    '3: Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.\n' +
+    '4: Criar uma função que recebe três números como parâmetros e retorna a média deles.\n' +
+    '5: Criar uma função que recebe dois números como parâmetros e retorna o maior deles.\n' +
+    '6: Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo.\n'
+);
+
+switch(select){
+    case '1':{
+        olaMundo();
+} break;
+    case '2':{
+        nome = readlineSync.question("\n Digite o nome: ");
+        if (nome && nome.trim() !== "") {
+            nomeParametro(nome);
+        } else {
+            console.log("\n Nome inválido.\n");
+        }
+    } break;
+    case '3':{
+        numero = readlineSync.question("\n Digite o número: ");
+        dobrar(numero);
+    } break;
+    case '4':{
+        console.log("\n Farei a média.");
+        numero1 = Number(readlineSync.question("\n Digite o número 1: "));
+        numero2 = Number(readlineSync.question("\n Digite o número 2: "));
+        numero3 = Number(readlineSync.question("\n Digite o número 3: "));
+        media(numero1, numero2, numero3);
+    } break;
+    case '5':{
+
+    } break;
+    case '6':{
+
+    } break;
+    case 0:{
+        console.log("\nFinalizando...\n");
+    }break;
+    default:{
+        console.log("\nNúmero inválido.\n");
+        }
+    } 
+} while (select != '0');
+
+
+function olaMundo(nome) {
+    console.log("\n Olá, mundo! \n");
+}
+
+
+function nomeParametro(nome) {
+    console.log("\n Você digitou:" + nome + "\n");
+}
+
+function dobrar(numero){
+    numero = numero * 2;
+console.log(numero);
+}
+
+function media(numero1, numero2, numero3){
+    let somaNumeros = (numero1 + numero2 + numero3);
+    let mediaNumeros = (somaNumeros / 3);
+    console.log(mediaNumeros.toFixed(2));
+}
+
+
+
+
+//Para rodar o código, siga a ordem: //
+// cd "C:\XX\XX\XX\Workspace\Desafios6" (Adicione o caminho no XX)//
+// chcp 65001 (Arrumar as letras quebradas) //
+//crie um novo terminal e o faça ser o node do código //
+// node script.js (faz o arquivo funcionar)//
