@@ -10,7 +10,7 @@ let numero2;
 let numero3;
 
 do{
-select = readlineSync.question(
+select = Number(readlineSync.question(
     'Digite qual desafio fazer: \n' +
     '0: Finalizar. \n' +
     '1: Criar uma função que exibe "Olá, mundo!" no console.\n' +
@@ -19,34 +19,34 @@ select = readlineSync.question(
     '4: Criar uma função que recebe três números como parâmetros e retorna a média deles.\n' +
     '5: Criar uma função que recebe dois números como parâmetros e retorna o maior deles.\n' +
     '6: Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo.\n'
-);
+));
 
 switch(select){
-    case '1':{
+    case 1:{
         olaMundo();
 } break;
-    case '2':{
+    case 2:{
         nome = readlineSync.question("\n Digite o nome: ");
     } break;
-    case '3':{
+    case 3:{
         numero = readlineSync.question("\n Digite o número: ");
         dobrar(numero);
     } break;
-    case '4':{
+    case 4:{
         console.log("\n Farei a média.");
         numero1 = Number(readlineSync.question("\n Digite o número 1: "));
         numero2 = Number(readlineSync.question("\n Digite o número 2: "));
         numero3 = Number(readlineSync.question("\n Digite o número 3: "));
         media(numero1, numero2, numero3);
     } break;
-    case '5':{
+    case 5:{
         console.log("\n Direi o máximo.");
         numero1 = Number(readlineSync.question("\n Digite o número 1: "));
         numero2 = Number(readlineSync.question("\n Digite o número 2: "));
         numero3 = Number(readlineSync.question("\n Digite o número 3: "));
         maior(numero1, numero2, numero3);
     } break;
-    case '6':{
+    case 6:{
 
     } break;
     case 0:{
