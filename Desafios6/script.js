@@ -27,6 +27,7 @@ switch(select){
 } break;
     case 2:{
         nome = readlineSync.question("\n Digite o nome: ");
+        nomeParametro(nome);
     } break;
     case 3:{
         numero = readlineSync.question("\n Digite o número: ");
@@ -47,7 +48,8 @@ switch(select){
         maior(numero1, numero2, numero3);
     } break;
     case 6:{
-
+        numero = readlineSync.question("\n Digite o número: ");
+        multiPorSi(numero);
     } break;
     case 0:{
         console.log("\nFinalizando...\n");
@@ -66,7 +68,7 @@ function olaMundo(nome) {
 
 
 function nomeParametro(nome) {
-    console.log("\n Você digitou:" + nome + "\n");
+    console.log("\n Você digitou: " + nome + "\n");
 }
 
 function dobrar(numero){
@@ -89,7 +91,7 @@ function maior(numero1, numero2, numero3){
 
 function multiPorSi(numero){
     let numeroMulti = numero * numero;
-    console.log("\n Resultado do número multiplicado por si: " + numeroMulti);
+    console.log("\n Resultado do número multiplicado por si: " + numeroMulti + "\n");
 }
 
 
