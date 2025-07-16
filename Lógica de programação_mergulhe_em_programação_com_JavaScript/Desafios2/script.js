@@ -27,7 +27,7 @@ function desafio(){
             alert("Boa Semana!");
         } break;
         default:{
-            alert("Digite um dia válido. EX: 'Segunda-Feira' ou 'Sábado'.");
+            alert("Digite um dia válido. \nEX: 'Segunda-Feira' ou 'Sábado'.");
             aux = "Default";
         }
     }
