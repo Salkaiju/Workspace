@@ -60,6 +60,8 @@ switch(select){
     } 
 } while (select != '0');
 
+
+
 // FUNÇÕES //
 
 function olaMundo(nome) {
