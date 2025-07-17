@@ -1,3 +1,6 @@
 ﻿Logica de programação mergulhe em programação com JavaScript: https://cursos.alura.com.br/user/gabrielkarkotli/course/logica-programacao-mergulhe-programacao-javascript/certificate
 
 Logica de programação explore funções e listas: https://cursos.alura.com.br/user/gabrielkarkotli/course/logica-programacao-funcoes-listas/certificate
+
+
+Começando em Programação: carreira e primeiros passos: https://cursos.alura.com.br/user/gabrielkarkotli/course/comecando-programacao-carreira-primeiros-passos/certificate
