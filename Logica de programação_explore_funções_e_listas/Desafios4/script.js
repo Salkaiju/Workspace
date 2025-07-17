@@ -10,6 +10,10 @@ for(let i = 0; i <= o; i++){
 console.log(nome[i]);
 }
 
+function cBI(){
+
+}
+
 
 
 
